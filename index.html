@@ -190,6 +190,33 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Reach out to us for collaboration or research inquiries.</p>
+                        <br>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+355 69 787 1915</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>drfusha@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -202,6 +229,13 @@
 
     <script src="firebase.js"></script>
     <script>
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
         // DOM Elements
         const loginBtn = document.getElementById('loginBtn');
         const loginModal = document.getElementById('loginModal');
